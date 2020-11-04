@@ -1,6 +1,14 @@
 body,html{
     height: 100%;
 }
+.input-style:focus{
+  border-width: 0px;
+  outline: none;
+}
+.input-style{
+  border-width: 0px;
+  width:100%;
+}
 .nav-menu,
 .nav-menu * {
   margin: 0;

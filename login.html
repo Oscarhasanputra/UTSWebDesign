@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    
+    <script src="./js/autentikasi.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/animate.min.css">
@@ -60,7 +62,7 @@
                 </div>
                 <div style="color:#5DABCC; font-family: 'Nunito Sans', sans-serif;
                 font-size: 15px;margin:auto 10px">
-                    Username
+                    <input id="nim" type="text" class="input-style" placeholder="Username">
                 </div>
             </div>
             <div class="form-input mt-4 d-flex">
@@ -73,11 +75,11 @@
                 
                 <div style="color:#5DABCC; font-family: 'Nunito Sans', sans-serif;
                 font-size: 15px;margin:auto 10px">
-                    Password
+                   <input id="password" type="password" class="input-style" placeholder="Password">
                 </div>
             </div>
 
-            <div class="form-input mt-4 d-flex" style="width: 40%; background-color: transparent; border: 2px solid white;">
+            <div id="button" class="mt-4 d-flex btn btn-outline-primary text-center ml-auto mr-auto" style="width: 40%;border: 2px solid white;border-radius: 25px;">
                     <div class="text-center text-white m-auto" style="font-family: 'Nunito Sans', sans-serif;font-size: 20px;">Login</div>
             </div>
         </div>
@@ -169,7 +171,7 @@
 </body>
 <script src="./js//wow.min.js"></script>
 <script>new WOW().init()</script>
-
+<!-- <script src="./datauts.json"></script> -->
 <script src="./js/owl.carousel.min.js"></script>
 
 <script src="./js/main.js"></script>

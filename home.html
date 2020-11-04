@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <script src="./js/autentikasi.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/animate.min.css">
@@ -19,13 +20,10 @@
         <div>
             <img src="images/logo.png" alt="Logo" height="50px">
         </div>
-        <div >
-            <span class="loginText p-3" style="color: white;">LogOut</span>
-            <svg style="color: white;" 
-            width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-door-open-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2v13h1V2.5a.5.5 0 0 0-.5-.5H11zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
-              </svg>
-        </div>
+        <a href="#" id="logout" >
+            <span class="loginText p-3" style="color: white;">Log out</span>
+            <img id="picture2" src="images/Ardi.jpeg" class="rounded-circle" style="width: 50px;height: 50px;object-fit: cover;" alt="profil">
+        </a>
         <!-- <div class="d-flex flex-rot justify-content-evenly">
             
         </div> -->
@@ -72,18 +70,18 @@
                 <div class="ml-4 mr-4 text-center w-4 mt-4"> 
                   <div class="box-shadow p-4" style="background-color: #1D2A64;">
                     <div class="d-flex flex-lg-column flex-xl-column flex-row">
-                      <img src="images/Ardi2.jpg" class="box-shadow-image rounded-circle" alt="" height="100px" width="100px">
+                      <img id="picture" src="images/Ardi.jpeg" class="box-shadow-image rounded-circle" alt="" height="100px" width="100px">
                     
                       <div style="align-self: center;">
-                        <div class="loginText text-white" style="">Ardi Ferdinan</div>
+                        <div class="loginText text-white data" data-info="name">Ardi Ferdinan</div>
                         
                     
-                        <div class="loginText text-white" style="font-size: 20px;font-weight: normal;">20181000047</div>
+                        <div class="loginText text-white data" data-info="nim" style="font-size: 20px;font-weight: normal;">20181000047</div>
                       </div>
                    
                   </div>
                   <div class="mt-4">
-                    <div class="textStyleQuote text-white"> Seni Adalah Ledakan</div>
+                    <div class="textStyleQuote text-white data" data-info="quotes"> Seni Adalah Ledakan</div>
                   </div>
                    
                

@@ -1,0 +1,32 @@
+{
+	"20181000017"	:{
+		"name"		:	"Oscar Hasan Putra",
+		"password"	:	"ubd17",
+		"quotes"	:	"Milikmu adalah MilikKu dan MilikKu adalah MilikKu",
+		"pictureid"	:	"./images/Oscar.jpeg"
+	},
+	"20181000023"	:{
+		"name"		:	"Vanny Melati",
+		"password"	:	"ubd23",
+		"quotes"	:	"Usaha tidak mengkhianati hasil :)",
+		"pictureid"	:	"./images/Vanny.jpeg"
+	},
+	"20181000047"	:	{
+		"name"		:	"Ardi Ferdinan",
+		"password"	:	"ubd47",
+		"quotes"	:	"Seni adalah Ledakan",
+		"pictureid"	:	"./images/Ardi.jpeg"
+	},
+	"20181000050"	:	{
+		"name"		:	"Geraldi Aditya",
+		"password"	:	"ubd50",
+		"quotes"	:	"Selamat! Anda memasuki semester dimana anda menyerah,dan ingin nikah saja",
+		"pictureid"	:	"./images/Geraldi.jpeg"
+	},
+	"20181000054"	:	{
+		"name"		:	"Endo",
+		"password"	:	"ubd54",
+		"quotes"	:	"Mau kuliah udah males,mau berhenti udah nanggung",
+		"pictureid"	:	"./images/Endo.jpeg"
+	}
+}

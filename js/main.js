@@ -20,6 +20,26 @@ document.addEventListener("readystatechange",()=>{
     });
   }
 })
+$("#logout").on("click",(e)=>{
+  e.preventDefault();
+  localStorage.clear();
+  let url=window.location.href.split("/")
+  url[url.length-1]="login.html";
+ let navigateUrl=url.join("/")
+  window.location.href=navigateUrl
+})
+$(document).ready(()=>{
+  let elems= $(".data")
+  if(elems.length>0){
+
+    elems.map((index,elem)=>{
+      info=$(elem).data("info")
+      elem.innerText= localStorage.getItem(info)
+    })
+    document.getElementById("picture").src=localStorage.getItem("pictureid")
+    document.getElementById("picture2").src=localStorage.getItem("pictureid")
+  }
+})
 $("a.dropdown-item,a.menu").on("click",function(e){
   e.preventDefault()
   let data=$(this).data("target")
@@ -32,28 +52,7 @@ $("a.dropdown-item,a.menu").on("click",function(e){
   }, 1000, 'swing');
 }
 })
-// $('.search_input').keyup(function (e) {
-//   console.log(e.which);
-//   //listening if the key pressed is the enter button
-//   if (e.which === 13) {
-//       //inserting the value of textfield content, you can add if statement to check if the field is null or empty
-//       var search_param = $(this).val();
-//       //value of field stored into a variable
-//       $('tr').removeClass('item_found');
-//       //remove item_found class attributed to a td AND search all td to find the one that march the search parameter
-//       if ($('td:contains("' + search_param + '")').html() !== undefined) {
-//           //if there is any td that has that record... then check for the closest tr and add a class with item_found as value
-//           $('td:contains("' + search_param + '")').closest('tr').attr('class', 'item_found');
-//           //add some highlight to it.
-//           $('td:contains("' + search_param + '")').closest('tr').css({background:'yellow',color:'black'});
-//           //then scroll to the item
-//           $(window).scrollTop($('.item_found').first().offset().top);
-//       } else {
-//           //if item is not found display no result found
-//           alert("Sorry no result found")
-//       }
-//   }
-// });
+
 $("#burgerMenu").on("click",(ev)=>{
     ev.preventDefault()
     $("#checkShow").click()
@@ -75,4 +74,32 @@ $("#burgerMenu").on("click",(ev)=>{
         })
       },1000)
     }
+})
+
+$("#button").on("click",()=>{
+  $.ajax({
+    url:"datauts.json",
+    datatType:"json",
+    method:"get"
+  }).done((res)=>{
+    data=res;
+    nim=document.getElementById("nim").value;
+    password=document.getElementById("password").value;
+   
+    if(data[nim] && password=="admin"){
+      let login=data[nim];
+      for(key in login){
+        localStorage.setItem(key,login[key])
+        
+      }
+      localStorage.setItem("nim",nim);
+      let url=window.location.href.split("/")
+      url[url.length-1]="home.html";
+     let navigateUrl=url.join("/")
+      window.location.href=navigateUrl
+    }
+  }).fail((jqxhr,status,error)=>{
+    // console.log("error "+error)
+  })
+  
 })
