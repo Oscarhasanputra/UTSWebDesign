@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header" class="fixed-top d-flex flex-row justify-content-between p-4 bg-dark">
+        <div>
+            <img src="images/logo.png" alt="Logo" height="50px">
+        </div>
+        
+        <!-- <div class="d-flex flex-rot justify-content-evenly">
+            
+        </div> -->
+       
+    </header>
+    
+    <input type="checkbox" id="checkShow2"></input>
+    <main class="container-fluid image-background">
+      <div class="d-flex flex-row" style="margin-top: 100px;">
+        <nav id="nav-menu-container">
+          <ul class="nav-menu nav-menu-responsive">
+            <li><a class="menu" href="#" data-target="#home">Home</a></li>
+            <li><a class="menu" href="#" data-target="#about-us">About Us</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            <!-- <li><a href="#team">Team</a></li> -->
+            <!-- <li class="">
+              <a class="menu" >About Us</a>
+              
+            </li> -->
+            
+          </ul>
+          <input type="checkbox" id="checkShow"></input>
+          
+          <div class="burger" id="burgerMenu">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+        </nav>
+      </div>
+        <div class="form">
+            <div class="text-center text-white pt-4 loginText"> User Login</div>
+            <div class="form-input mt-4 d-flex">
+                <div>
+                    <svg style="color:#5DABCC;" width="3em" height="2em" viewBox="0 0 16 16" class="mt-2 bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg>
+                </div>
+                <div style="color:#5DABCC; font-family: 'Nunito Sans', sans-serif;
+                font-size: 15px;margin:auto 10px">
+                    Username
+                </div>
+            </div>
+            <div class="form-input mt-4 d-flex">
+                <div>
+                    <svg style="color:#5DABCC;" width="3em" height="1.8em" viewBox="0 0 16 16" class="mt-2 bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+                        <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+                      </svg>
+                </div>
+                
+                <div style="color:#5DABCC; font-family: 'Nunito Sans', sans-serif;
+                font-size: 15px;margin:auto 10px">
+                    Password
+                </div>
+            </div>
+
+            <div class="form-input mt-4 d-flex" style="width: 40%; background-color: transparent; border: 2px solid white;">
+                    <div class="text-center text-white m-auto" style="font-family: 'Nunito Sans', sans-serif;font-size: 20px;">Login</div>
+            </div>
+        </div>
+       
+       </main>
+       <section id="about-us" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>About Us</h2>
+            <p>Sekumpulan Mahasiswa Putus Asa</p>
+          </div>
+          <div class="owl-carousel about-us-carousel">
+  
+              <div class="about-us-item d-flex flex-column justify-content-between">
+                <p>
+                  <img src="images/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Selamat anda memasuki semester dimana anda MENYERAH, dan ingin nikah aja
+                  <img src="images/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <div class="d-flex flex-column">
+                <img src="images/Geraldi.jpeg" class="about-us-img" alt="">
+                <h3>Geraldi Aditya</h3>
+                <h4>20181000050</h4>
+                </div>
+              </div>
+  
+              <div class="about-us-item d-flex flex-column justify-content-between">
+                <p>
+                  <img src="images/quote-sign-left.png" class="quote-sign-left" alt="">
+                  seni adalah ledakan
+                  <img src="images/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <div class="d-flex flex-column">
+                <img src="images/Ardi.jpeg" class="about-us-img" alt="">
+                <h3>Ardi Ferdinan</h3>
+                <h4>20181000047</h4>
+            </div>
+              </div>
+  
+              <div class="about-us-item d-flex flex-column justify-content-between">
+                <p>
+                  <img src="images/quote-sign-left.png" class="quote-sign-left" alt="">
+                  usaha tidak mengkhianati hasil :)
+                  <img src="images/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <div class="d-flex flex-column">
+                <img src="images/Vanny.jpeg" class="about-us-img" alt="">
+                <h3>Vanny Melati</h3>
+                <h4>20181000023</h4>
+                </div>
+
+              </div>
+  
+              <div class="about-us-item d-flex flex-column justify-content-between">
+                <p>
+                  <img src="images/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Milikmu adalah MilikKu dan MilikKu adalah MilikKu
+                  <img src="images/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <div class="d-flex flex-column">
+                <img src="images/Oscar.jpeg" class="about-us-img" alt="">
+                <h3>Oscar Hasan Putra</h3>
+                <h4>20181000017</h4>
+                </div>
+              </div>
+  
+              <div class="about-us-item d-flex flex-column justify-content-between">
+                <p>
+                  <img src="images/quote-sign-left.png" class="quote-sign-left" alt="">
+                  Mau kuliah udah males,mau berhenti udah nanggung
+                   <img src="images/quote-sign-right.png" class="quote-sign-right" alt="">
+                </p>
+                <div class="d-flex flex-column">
+                <img src="images/Endo.jpeg" class="about-us-img" alt="">
+                <h3>Endo</h3>
+                <h4>20181000054</h4>
+                </div>
+              </div>
+  
+          </div>
+  
+        </div>
+      </section>
+
+      <footer class="bg-dark text-white text-center" style="font-size: 20px;">
+        Copyright 2020
+      </footer>
+
+</body>
+<script src="./js//wow.min.js"></script>
+<script>new WOW().init()</script>
+
+<script src="./js/owl.carousel.min.js"></script>
+
+<script src="./js/main.js"></script>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header" class="fixed-top d-flex flex-row justify-content-between p-4 bg-dark">
+        <div>
+            <img src="images/logo.png" alt="Logo" height="50px">
+        </div>
+        <div >
+            <span class="loginText p-3" style="color: white;">LogOut</span>
+            <svg style="color: white;" 
+            width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-door-open-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2v13h1V2.5a.5.5 0 0 0-.5-.5H11zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+              </svg>
+        </div>
+        <!-- <div class="d-flex flex-rot justify-content-evenly">
+            
+        </div> -->
+        
+    </header>
+    
+    <input type="checkbox" id="checkShow2"></input>
+    <main class="container-fluid image-background">
+        <div class="d-flex flex-row" style="margin-top: 100px;">
+            <nav id="nav-menu-container">
+              <ul class="nav-menu nav-menu-responsive">
+                <li><a class="menu" href="#" data-target="#home">Home</a></li>
+                <!-- <li><a class="menu" href="#" data-target="#article">Article</a></li> -->
+                <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                <!-- <li><a href="#team">Team</a></li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link menu dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Stories</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#" data-target="#what">What</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#" data-target="#why">Why</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#" data-target="#why">Who</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#" data-target="#when">When</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#" data-target="#where">Where</a>
+                    </div>
+                  </li>
+                  
+                
+              </ul>
+              <input type="checkbox" id="checkShow"></input>
+              
+              <div class="burger" id="burgerMenu">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </div>
+            </nav>
+          </div>
+        <div id="home" class="backdrop-container d-flex flex-column flex-lg-row flex-xl-row  mt-5 h-100">
+           <!-- <div class="row"> -->
+                <div class="ml-4 mr-4 text-center w-4 mt-4"> 
+                  <div class="box-shadow p-4" style="background-color: #1D2A64;">
+                    <div class="d-flex flex-lg-column flex-xl-column flex-row">
+                      <img src="images/Ardi2.jpg" class="box-shadow-image rounded-circle" alt="" height="100px" width="100px">
+                    
+                      <div style="align-self: center;">
+                        <div class="loginText text-white" style="">Ardi Ferdinan</div>
+                        
+                    
+                        <div class="loginText text-white" style="font-size: 20px;font-weight: normal;">20181000047</div>
+                      </div>
+                   
+                  </div>
+                  <div class="mt-4">
+                    <div class="textStyleQuote text-white"> Seni Adalah Ledakan</div>
+                  </div>
+                   
+               
+                  </div>
+                    </div>
+                <div class="d-none d-lg-block d-xl-block text-center w-6 ml-auto mr-auto p-4 overflow-auto"
+                    style="background-color: white;"
+                >
+                    <img src="images/library.png" class="ml-auto mr-auto text-center" style="width:100%" alt="" >
+                    <div>
+                      <p>
+                        perpustakaan adalah sebuah koleksi buku dan majalah. Walaupun dapat diartikan sebagai koleksi pribadi perseorangan, namun perpustakaan lebih umum dikenal sebagai sebuah koleksi besar yang dibiayai dan dioperasikan oleh sebuah kota atau institusi, serta dimanfaatkan oleh masyarakat yang rata-rata tidak mampu membeli sekian banyak buku dengan biaya sendiri.
+                      </p> 
+                      <p>
+                        Tetapi, dengan koleksi dan penemuan media baru selain buku untuk menyimpan informasi, banyak perpustakaan kini juga merupakan tempat penyimpanan dan/atau akses ke map, cetak atau hasil seni lainnya, mikrofilm, mikrofiche, tape audio, CD, LP, tape video dan DVD. Selain itu, perpustakaan juga menyediakan fasilitas umum untuk mengakses gudang data CD-ROM dan internet.
+                      </p>
+                    </div>
+                  </div>
+           
+            <!-- </div> -->
+        </div>
+        <section class="d-block d-lg-none d-xl-none wow wobble">
+            <div class="container">
+              <div class="section-header">
+                <h2>Universitas Tertutup</h2>
+                <div class="d-flex flex-column flex-lg-row flex-xl-row justify-content-center">
+                    <img src="./images/library.png" class="w-4" alt="">
+                    <div class="textStyle p-lg-5 p-xl-6">
+                        Apa saja yang ada di Universitas Tertutup? Tentu saja ada ruangan yang pada umumnya diperkuliahan seperti ruangan kelas, organisasi, perpustakaan, musik, lab, aula, lapangan basket, volley, futsal.       Fasilitas tersebut dapat digunakan oleh           mahasiswa/I untuk belajar, berolahraga, berbagi ilmu dan pengalaman, serta mengasa         kemampuan. Selain itu juga tidak tertinggal dengan kantin, disana kita bisa bertemu dengan orang yang kita kenal.
+
+                    </div>
+                </div>
+              </div>
+              </div>
+        </section>
+        <section id="what" class="wow bounceInLeft">
+            <div class="container">
+              <div class="section-header">
+                <h2>WHAT</h2>
+                <div class="d-flex flex-column flex-lg-row flex-xl-row justify-content-center">
+                    <img src="./images/what.png" class="w-4" alt="">
+                    <div class="textStyle p-lg-5 p-xl-6">
+                        Apa saja yang ada di Universitas Tertutup? Tentu saja ada ruangan yang pada umumnya diperkuliahan seperti ruangan kelas, organisasi, perpustakaan, musik, lab, aula, lapangan basket, volley, futsal.       Fasilitas tersebut dapat digunakan oleh           mahasiswa/I untuk belajar, berolahraga, berbagi ilmu dan pengalaman, serta mengasa         kemampuan. Selain itu juga tidak tertinggal dengan kantin, disana kita bisa bertemu dengan orang yang kita kenal.
+
+                    </div>
+                </div>
+              </div>
+              </div>
+        </section>
+        <section id="who" class="wow bounceInRight">
+            <div class="container">
+              <div class="section-header">
+                <h2>WHO</h2>
+                <div class="d-flex flex-column flex-lg-row flex-xl-row justify-content-center">
+                    <img src="./images/who.png" class="w-4" alt="">
+                    <div class="textStyle p-lg-5 p-xl-6">
+                        Pada tahun 2018 berdirilah Program      Pendidikan Ilmu Bahasa di Bali. Berawal dari 2 sastra kini sudah memiliki 10 sastra. Setelah melalui perjuangan panjang yang menghadapi berbagai tantangan             Universitas Tertutup menjelma menjadi    satu-satunya perguruan tinggi yang        berbasis   sastra terkemuka di Indonesia. 
+
+                    </div>
+                </div>
+              </div>
+              </div>
+        </section>
+        <section id="when" class="wow fadeInDownBig">
+            <div class="container">
+              <div class="section-header">
+                <h2>WHEN</h2>
+                <div class="d-flex flex-column flex-lg-row flex-xl-row justify-content-center">
+                    <img src="./images/when.png" class="w-4" alt="">
+                    <div class="textStyle p-lg-5 p-xl-6">
+                        Universitas Tertutup disingkat sebagai UT, adalah sebuah perguruan swasta berbasis sastra terkemuka yang terletak di Ubud, Bali. Diresmikan pada 16 April 2018.      
+
+                    </div>
+                </div>
+              </div>
+              </div>
+        </section>
+        <section id="why" class="wow fadeInUp">
+            <div class="container">
+              <div class="section-header">
+                <h2>WHY</h2>
+                <div class="d-flex flex-column flex-lg-row flex-xl-row justify-content-center">
+                    <img src="./images/why.png" class="w-4" alt="">
+                    <div class="textStyle p-lg-5 p-xl-6">
+                        Penamaan Universitas Tertutup didapat dari hasil rundingan para pendiri. Universitas tertutup sendiri memang tidak dimaksudkan sebagai universitas terbuka pada umumnya. Para Mahasiswa yang terdaftar sebagai Mahasiswa sudah melewati serangkaian tes dan harus memiliki kualifikasi yang mumpuni.
+
+                    </div>
+                </div>
+              </div>
+              </div>
+        </section>
+        <section id="where" class="wow bounceInDown">
+            <div class="container">
+              <div class="section-header">
+                <h2>WHERE</h2>
+                <div class="d-flex flex-column flex-lg-row flex-xl-row justify-content-center">
+                    <img src="./images/where.png" class="w-4" alt="">
+                    <div class="textStyle p-lg-5 p-xl-6">
+                        Universitas Tertutup didirikan di Ubud, Bali. Universitas ini didirikan disini karena di bali memiliki sumber daya alam yang bagus dan asri. Orang-orang yang ke Bali juga bukan sekedar orang yang ingin liburan saja. Dibangun di Ubud agar sekiranya orang-orang tertarik untuk menjadi mahasiswa.
+
+                    </div>
+                </div>
+              </div>
+              </div>
+        </section>
+
+        <section id="how" class="wow fadeInUpBig">
+            <div class="container">
+              <div class="section-header">
+                <h2>HOW</h2>
+                <div class="d-flex flex-column flex-lg-row flex-xl-row justify-content-center">
+                    <img src="./images/how.png" class="w-4" alt="">
+                    <div class="textStyle p-lg-5 p-xl-6">
+                        Universitas tertutup sendiri didirikan karena para pendiri memiliki satu harapan, Yaitu untuk memcetak generasi penerus bangsa yang berkualitas. Semoga para Mahasiswa dapat menjadi pribadi yang elok, beretos tinggi, berbudi luhur dan berwawasan luas.
+
+                    </div>
+                </div>
+              </div>
+              </div>
+        </section>
+       
+       </main>
+
+</body>
+<script src="./js/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script src="./js/main.js"></script>
+</html>
