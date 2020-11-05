@@ -83,11 +83,11 @@ $("#button").on("click",()=>{
     method:"get"
   }).done((res)=>{
     data=res;
-    nim=document.getElementById("nim").value;
-    password=document.getElementById("password").value;
+    let nim=document.getElementById("nim");
+    let password=document.getElementById("password");
    
-    if(data[nim] && password=="admin"){
-      let login=data[nim];
+    if(data[nim.value] && password=="admin"){
+      let login=data[nim.value];
       for(key in login){
         localStorage.setItem(key,login[key])
         
@@ -97,8 +97,13 @@ $("#button").on("click",()=>{
       url[url.length-1]="home.html";
      let navigateUrl=url.join("/")
       window.location.href=navigateUrl
+    }else{
+      nim.value=""
+      password.value=""
+      alert("Gagal Login, Password atau username tidak sesuai")
     }
   }).fail((jqxhr,status,error)=>{
+    alert("Login gagal, tidak terhubung pada server!");
     // console.log("error "+error)
   })
   
