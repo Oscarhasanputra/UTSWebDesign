@@ -94,7 +94,7 @@ $("#button").on("click",()=>{
       }
       localStorage.setItem("nim",nim);
       let url=window.location.href.split("/")
-      url[url.length-1]="home.html";
+      url[url.length-1]="index.html";
      let navigateUrl=url.join("/")
       window.location.href=navigateUrl
     }else{

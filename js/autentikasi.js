@@ -9,7 +9,7 @@ if(pathUrl!="login.html"){
     }
 }else{
     if(localStorage.length>0){
-        url[url.length-1]="home.html"
+        url[url.length-1]="index.html"
         redirectUrl=url.join("/")
         window.location.href=redirectUrl;
     }
