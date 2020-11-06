@@ -151,7 +151,11 @@ transition: all 2s ease-in;
 }
 @media only screen and (max-width:630px){
     .burger{
+      margin-top: 10px;
         display: inline-block;
+    }
+    .form{
+       width:80% !important;
     }
     /* ul.nav-menu{
         display: none;
@@ -330,7 +334,7 @@ text-transform: none;
     border-radius: 20px;
     margin: auto auto;
     position: relative;
-    top: 25%;
+    top: 20%;
     z-index: 2;
 }
 .form-input{
