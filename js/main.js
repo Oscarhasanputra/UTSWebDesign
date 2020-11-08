@@ -43,9 +43,13 @@ $(document).ready(()=>{
 $("a.dropdown-item,a.menu").on("click",function(e){
   e.preventDefault()
   let data=$(this).data("target")
-  
+  console.log("hello")
   if(data){
   let elem =$(`${data}`)
+  
+  if(!elem.is(":visible"))
+    elem=elem.closest("main").nextAll(`${data}`);
+  // console.log(continueElem)
   var top_space = $('#header').outerHeight();
   $('html, body').animate({
     scrollTop: elem.offset().top-top_space

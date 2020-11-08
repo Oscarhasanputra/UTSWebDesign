@@ -11,6 +11,7 @@ if(pathUrl!="login.html"){
     if(localStorage.length>0){
         url[url.length-1]="index.html"
         redirectUrl=url.join("/")
+        
         window.location.href=redirectUrl;
     }
 }
