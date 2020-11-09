@@ -170,7 +170,15 @@
 
 </body>
 <script src="./js//wow.min.js"></script>
-<script>new WOW().init()</script>
+<script>new WOW().init()
+  $("input.input-style").keypress((e)=>{
+    
+    if(e.which===13){
+        $("#button").click();
+    }
+  })
+
+</script>
 <!-- <script src="./datauts.json"></script> -->
 <script src="./js/owl.carousel.min.js"></script>
 

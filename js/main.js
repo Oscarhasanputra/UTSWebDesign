@@ -90,7 +90,7 @@ $("#button").on("click",()=>{
     let nim=document.getElementById("nim");
     let password=document.getElementById("password");
   
-    if(data[nim.value] && password.value=="admin"){
+    if(data[nim.value] && data[nim.value].password==password.value){
       let login=data[nim.value];
       for(key in login){
         localStorage.setItem(key,login[key])
